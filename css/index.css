@@ -13,8 +13,8 @@ table#mainPageArticleTable {
 
 td.ATHead {
     background-color:#FCACD3;
-    width: 8vw;
-    max-width: 60px;
+    width: 10%;
+    max-width: 80px;
     padding: 1vw;
     text-align: center;
     vertical-align: middle;
