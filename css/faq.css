@@ -1,0 +1,54 @@
+/*
+[파일 이름] faq.css
+[제작 일자] 2019년 04월 10일
+[제작자] 악동분홍토끼(pinkrabbit412@daum.net)
+[설명] faq.html에 적용될 CSS입니다.
+*/
+
+div#messages {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+}
+
+.ques {
+    border-radius: 15px 0px 25px 15px;
+    background: #FCACD3;
+    color: #252830;
+
+    max-width: 75%;
+    display: inline-block;
+
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 7px;
+
+    padding:15px;
+    padding-left: 25px;
+    padding-right: 30px;
+
+    font-size:1.2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.ans {
+    border-radius: 0px 15px 15px 25px;
+    background: ghostwhite;
+    color: #252830;
+
+    max-width: 75%;
+    display: inline-block;
+
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+    padding:15px;
+    padding-left: 30px;
+    padding-right: 25px;
+
+    font-size:1.1rem;
+    text-align: left;
+}

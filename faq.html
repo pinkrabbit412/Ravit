@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+
+<HEAD>
+    <!--웹 페이지 기본 정보 설정-->
+    <title>래빛: FAQ</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
+    <meta name="author" content="악동분홍토끼">
+
+    <meta property="og:title" content="래빛: 여러분을 위한 자그마한 안내서" />
+    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+    <meta property="og:image" content="./image/rabbitMainImage.png" />
+    <meta property="og:url" content="ravit.ml" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--스타일시트 등의 정보 설정-->
+    <link rel="shortcut icon" href="./image/favicon.ico">
+
+    <link rel="stylesheet" href="./css/basics.css">
+    <link rel="stylesheet" href="./css/faq.css">
+
+    <!--자바스크립트/JQuery 영역-->
+    <script src="./scripts/includeHTML.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--페이지 헤더 영역-->
+    <div include-html = "./commonParts/header.html" ></div>
+
+<BODY>
+    <div id="main">
+        <!--페이지 본문-->
+        <div id="mainContents">
+            <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
+                <span class="paintPink">F</span>requently <span class="paintPink">A</span>sked <span class="paintPink">Q</span>uestions
+            </h2>
+            여러분들이 대학생활에 있어 궁금해 하실만한 정보들을 이 곳에 담아보았습니다!
+            <hr class="inContents">
+            <br>
+
+            <div class="infoBubble">
+                Ctrl + F로 내용 검색이 가능합니다!<br>
+                모바일은 '페이지 내에서 찾기'등을 이용해주세요.
+            </div>
+
+            <br><br>
+            
+            <div id="messages">
+                <div class="message">
+                    <div style="text-align: right;">질문 #1 <div class="ques">
+                        광운대학교는 몇년도에 개교했나요?
+                    </div></div>
+                    <div style="text-align: left;"><div class="ans">
+                        1934년 5월 20일, 조선무선강습소로 개교하여,<br>
+                        1963년 동국전자공과대학, 1964년 광운전자공과대학을 거쳐<br>
+                        1987년에 지금의 광운대학교가 되었어요.
+                    </div></div>
+                </div>
+
+                <div class="message">
+                    <div style="text-align: right;">질문 #2 <div class="ques">
+                        출석 확인은 어디에서 하나요?
+                    </div></div>
+                    <div style="text-align: left;"><div class="ans">
+                        다음 URL로 접속해보세요: <a href="https://info.kw.ac.kr/webnote/attend/login.php">https://info.kw.ac.kr/webnote/attend/login.php</a>
+                    </div></div>
+                </div>
+
+                <div class="message">
+                    <div style="text-align: right;">질문 #3 <div class="ques">
+                        U-Campus(유캠퍼스, 유캠)이 뭐에요?
+                    </div></div>
+                    <div style="text-align: left;"><div class="ans">
+                        학교마다 하나씩은 있는, 종합정보서비스를 제공하는 웹사이트입니다!
+                        <br>과목별 공지사항 확인 및 과제 제출, 수강신청 프로그램 다운로드, 성적 확인, 수업 평가 등을 하는 곳이라서 매우 자주 접속하시게 될 거에요.
+                        다음 URL로 접속해보세요: <a href="https://info.kw.ac.kr">https://info.kw.ac.kr</a>
+                    </div></div>
+                </div>
+
+                <div class="message">
+                    <div style="text-align: right;">질문 #4 <div class="ques">
+                        학점이 뭐에요?
+                    </div></div>
+                    <div style="text-align: left;"><div class="ans">
+                        다음을 참고해주세요: <a href="./article_grades.html">학점</a>
+                    </div></div>
+                </div>
+
+                <div class="message">
+                    <div style="text-align: right;">질문 #5 <div class="ques">
+                        전필, 전선, 기필, 기선, 교필, 교선이<br>무엇의 줄임말인가요?
+                    </div></div>
+                    <div style="text-align: left;"><div class="ans">
+                        각각 전공필수, 전공선택, 기초교양필수, 기초교양선택, 교양필수, 교양선택의 약자입니다!
+                        기초교양 및 필수 과목은 정해진 기준에 따라 이수하지 않으시면 졸업이 불가능하니 이 점 유의하세요...!
+                    </div></div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!--페이지 푸터 영역-->
+        <hr id="footer">
+        <div include-html = "./commonParts/footer.html" ></div>
+        
+    </div> <!--div class="main"의 끝-->
+
+    <!--JavaScript 호출 영역-->
+    <script>
+        includeHTML();
+    </script>
+    <script src="./scripts/pageSizeAdjust.js"></script>
+</BODY>
+
+</HTML>

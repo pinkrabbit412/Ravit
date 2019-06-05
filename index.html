@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+
+<HEAD>
+    <!--웹 페이지 기본 정보 설정-->
+    <title>래빛: 여러분을 위한 자그마한 안내서</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
+    <meta name="author" content="악동분홍토끼">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="래빛: 여러분을 위한 자그마한 안내서" />
+    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+    <meta property="og:image" content="./image/rabbitMainImage.png" />
+    <meta property="og:url" content="ravit.ml" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--스타일시트 등의 정보 설정-->
+    <link rel="shortcut icon" href="./image/favicon.ico">
+
+    <link rel="stylesheet" href="./css/basics.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!--자바스크립트/JQuery 영역-->
+    <script src="./scripts/includeHTML.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--페이지 헤더 영역-->
+    <div include-html = "./commonParts/header.html" ></div>
+
+<BODY>
+    <div id="main">
+        <!--페이지 본문-->
+        <div id="mainContents">
+            <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
+                <span class="paintPink">래빛:</span> 여러분을 위한 자그마한 안내서
+            </h2>
+            <hr class="inContents">
+
+            <div class="toCenter" style="border: 1px solid #FCACD3; padding: 3vw;">
+                <div style="color: #FCACD3; font-size: 1.5rem; font-weight: bold;">"참·빛 - VERITAS ET LUX"</div>
+                <div style="color: gray; font-size: 1.25rem;">"실천궁행의 생활화"</div>
+                <br>
+                광운대학교에 입학하신 것을 축하드립니다!<br>
+                이 사이트는 여러분이 대학 생활에 보다 빨리 적응하실 수 있도록,<br>
+                개인이 만들고 운영하는 나름의 안내서격 사이트입니다.<br>
+                <br>
+                개인이 작성 · 관리하는지라, 내용에 오류 등이 있을 수 있습니다.<br>
+                제보 및 문의는 이메일 <a href = "mailto: pinkrabbit412@daum.net">pinkrabbit412@daum.net</a> 을 이용해주시면 됩니다 :)<br>
+                <br>
+                - 소프트웨어학부 18학번 <span class="paintPink">악동분홍토끼</span> 드림 -
+
+            </div>
+
+            <br><br>
+            <div id="docHrefTable">
+                <table id="mainPageArticleTable">
+                    <tbody>
+                        <tr>
+                            <td class="ATHead"><img src="./image/icons/baseline_info_white_48dp.png" width="100%"></td>
+                            <td class="AT">대학으로의 첫걸음, 여러분들께 드리고 싶은 <br>
+                            <a href = "./article_simpleTips.html" style="font-size: 1.35rem;">"간단한 팁들"</a></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="ATHead"><img src="./image/icons/baseline_book_white_48dp.png" width="100%"></td>
+                            <td class="AT">0.1초의 싸움, <br>
+                            <a href = "./article_signingUp.html" style="font-size: 1.35rem;">"수강신청"</a></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="ATHead"><img src="./image/icons/baseline_grade_white_48dp.png" width="100%"></td>
+                            <td class="AT">대학 와서 놀아도 된다는건 다 옛말이에요, <br>
+                                <a href = "./article_grades.html" style="font-size: 1.35rem;">"학점"</ㅁ></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="ATHead"><img src="./image/icons/baseline_done_all_white_48dp.png" width="100%"></td>
+                            <td class="AT">네? 학점을 다 채웠는데 졸업을 못해요...? <br>
+                                <a href = "./article_toGraduate.html" style="font-size: 1.35rem;">"졸업요건"</a></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td class="ATHead"><img src="./image/icons/baseline_thumb_up_white_48dp.png" width="100%"></td>
+                            <td class="AT">날 사람에게 든든한 지원을, <br>
+                            <a href="./article_scholarship.html" style="font-size: 1.35rem;">"장학금"</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+        </div>
+
+        <!--페이지 푸터 영역-->
+        <hr id="footer">
+        <div include-html = "./commonParts/footer.html" ></div>
+        
+    </div> <!--div class="main"의 끝-->
+
+    <!--JavaScript 호출 영역-->
+    <script>
+        includeHTML();
+    </script>
+    <script src="./scripts/pageSizeAdjust.js"></script>
+</BODY>
+
+</HTML>

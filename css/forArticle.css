@@ -1,0 +1,27 @@
+/*
+[파일 이름] forArticle.css
+[제작 일자] 2019년 03월 30일
+[제작자] 악동분홍토끼(pinkrabbit412@daum.net)
+[설명] article HTML 문서에 적용될 CSS입니다.
+*/
+
+p.content {
+    text-align: justify;
+}
+
+ul > li {
+    margin-bottom: 0.75rem;
+}
+
+/*simpleTips.html ONLY*/
+.keySentence {
+    /*display: inline;*/
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+p.tipsExplanation {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+/*END*/

@@ -1,0 +1,181 @@
+/*
+[파일 이름] basics.css
+[제작 일자] 2019년 03월 30일
+[제작자] 악동분홍토끼(pinkrabbit412@daum.net)
+[설명] 모든 html에 적용될 CSS입니다. 기본 글 서식 및 디자인 등을 정의하고 있습니다.
+*/
+
+html {
+    font-size: 100%;
+    font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*헤더 영역*/
+div#siteHeader {
+    vertical-align: middle;
+    margin: 0%;
+    padding: 0%;
+}
+nav {
+    width: 100%;
+    background-color: rgba(251, 171, 210, 0.90)
+}
+nav ul {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+}
+#mainLogo {
+    margin-right: 3.5%;
+    text-align: left;
+}
+ul#headerList li {
+    display: inline;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    padding: 19px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+ul#headerList li a {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+div.headerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul#headerList li.menuBox:hover{
+    background-color:#F95AA8;
+}
+/*헤더 영역의 끝*/
+
+#main {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #FFFFFF;
+    width: 94%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0%;
+    background-color: #202325;
+    background-size: 95px;
+}
+
+a {
+    color: #FCACD3;
+    text-decoration: none;
+}
+a:hover {
+    color: #FCACD3;
+    text-decoration: underline;
+}
+
+a.outerLink {
+    color: orange;
+    text-decoration: none;
+}
+a.outerLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+div#mainContents {
+    background-color: #252830;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+
+/*소제목 및 문단 부분의 시작*/
+h2.TitleInMain {
+    font-size: 2rem;
+    margin-bottom: 0%;
+}
+
+h3.subTitleInMain {
+    font-size: 1.75rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
+}
+
+h4.subTitleInMain {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
+}
+
+h5.subTitleInMain {
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
+}
+
+hr.inContents {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px dashed #FCACD3;
+}
+/*소제목 및 문단 부분의 끝*/
+
+
+hr#footer {
+    margin-top: 0%;
+}
+
+.toCenter {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.infoBubble {
+    background-color: rgba(252, 172, 211, 0.1);
+    border: 1px solid #FCACD3;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem;
+}
+
+
+/*텍스트 서식 모음의 시작*/
+.paintPink{
+    color: #FCACD3;
+    display: inline;
+}
+
+.clr{
+    color: #FCACD3; /*Default Value*/
+    display: inline;
+
+}
+
+.comment {
+    color: olivedrab;
+}
+
+del {
+    color: gray;
+}
+/*텍스트 서식 모음의 끝*/
