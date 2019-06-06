@@ -14,7 +14,7 @@ function includeHTML() {
                 }
 
                 else if (this.readyState == 4 && this.status == 200) {
-                    elmnt.innerHTML = "./errorPage/404_error.html";
+                    elmnt.innerHTML = "./404.html";
                     includeHTML();
                 }
                 elmnt.removeAttribute("include-html");
