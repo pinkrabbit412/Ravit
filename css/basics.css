@@ -8,6 +8,7 @@
 html {
     font-size: 90%;
     font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
+    line-height: 1.6em;
 }
 
 .hide {
@@ -100,9 +101,10 @@ a.outerLink:hover {
 
 div#mainContents {
     background-color: #252830;
-    padding: 15px;
+    padding-top: 0.75rem;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 1.6rem;
     color: white;
 }
 
@@ -110,7 +112,7 @@ div#mainContents {
 /*소제목 및 문단 부분의 시작*/
 h2.TitleInMain {
     font-size: 2rem;
-    margin-bottom: 0%;
+    margin-bottom: 1rem;
 }
 
 h3.subTitleInMain {
