@@ -34,7 +34,7 @@ div#messages {
 
 .ans {
     border-radius: 0px 15px 15px 25px;
-    background: ghostwhite;
+    background-color: #dddddd;
     color: #252830;
 
     max-width: 75%;
@@ -51,4 +51,9 @@ div#messages {
 
     font-size:1.1rem;
     text-align: left;
+}
+
+hr.bubbleSeperate {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

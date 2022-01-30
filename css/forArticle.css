@@ -9,8 +9,16 @@ p.content {
     text-align: justify;
 }
 
-ul > li {
+ul > li.list {
     margin-bottom: 0.75rem;
+}
+
+h4 {
+	margin-top: 3rem !important;
+}
+
+h5 {
+	margin-top: 1.5rem !important;
 }
 
 /*simpleTips.html ONLY*/

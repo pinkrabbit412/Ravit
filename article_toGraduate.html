@@ -1,89 +1,82 @@
-<!DOCTYPE HTML>
-<HTML lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
+	
+	<!--헤드 태그-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>래빛: 여러분들을 위한 자그마한 안내서</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/basics.css" rel="stylesheet">
 
-<HEAD>
-    <!--웹 페이지 기본 정보 설정-->
-    <title>래빛: 졸업요건</title>
+		<meta property="og:title" content="래빛" />
+		<meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+		<meta property="og:image" content="./image/rabbitMainImage.png" />
+		<meta property="og:url" content="ravit.ml" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
 
-    <meta charset="UTF-8">
-    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
-    <meta name="author" content="악동분홍토끼">
+		<!--스타일시트 등의 정보 설정-->
+		<link rel="shortcut icon" href="./image/favicon.ico">
+		<link rel="stylesheet" href="./css/basics.css">
+		<link rel="stylesheet" href="./css/forArticle.css">
 
-    <meta property="og:title" content="래빛" />
-    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
-    <meta property="og:image" content="../image/rabbitMainImage.png" />
-    <meta property="og:url" content="ravit.ml" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+		<!--자바스크립트/JQuery 영역-->
+		<script src="./script/mapImageSelect.js"></script>
+	</head>
 
-    <!--스타일시트 등의 정보 설정-->
-    <link rel="shortcut icon" href="./image/favicon.ico">
-
-    <link rel="stylesheet" href="./css/basics.css">
-    <link rel="stylesheet" href="./css/forArticle.css">
-    <style type="text/css">
-        table {
-            border-collapse: collapse;
-            empty-cells: show;
-            table-layout: fixed;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style-type: none;
-            border-spacing: 2px;
-            border-color: grey;
-            word-break: keep-all;
-            font-size: 0.85rem;
-            text-align: center;
-        }
-        th {
-            background: #222525;
-            border-bottom: solid 1px #080808;
-            padding: 0.7rem 0 0.7rem 0;
-        }
-        td {
-            border-bottom: solid 1px #080808;
-            padding: 0.7rem 0 0.7rem 0;
-            border-left: solid 1px #080808;
-        }
-    </style>
-
-    <!--자바스크립트/JQuery 영역-->
-    <script src="./scripts/includeHTML.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <!--페이지 헤더 영역-->
-    <div include-html = "./commonParts/header.html" ></div>
-
-<BODY>
-    <div id="main">
-        <!--페이지 본문-->
-        <div id="mainContents">
+<body>
+		<!-- (공통) 네비게이션 바 -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="./index.html" style="margin-left: 2rem; margin-right: 2rem"><img src="image/ravit_logo_white.png" alt="래빛 로고" height="45rem"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> <a class="nav-link" href="./index.html">메인<span class="sr-only">(current)</span></a> </li>
+						<li class="nav-item"> <a class="nav-link" href="./campusMap.html">캠퍼스맵</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a> </li>
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 게시글 </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="./article_simpleTips.html">간단한 팁</a>
+								<a class="dropdown-item" href="./article_signingUp.html">수강신청</a>
+								<a class="dropdown-item" href="./article_grades.html">학점</a> 
+								<a class="dropdown-item" href="./article_toGraduate.html">졸업요건</a> 
+								<a class="dropdown-item" href="./article_scholarship.html">장학금</a> 
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="./websites.html">외부 웹사이트</a> 
+							</div>
+						</li>
+						<!--<li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li> -->
+					</ul>
+        			<!--<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>-->
+      			</div>
+			</nav>
+	
+	<!-- 페이지 본문 영역의 시작 -->
+	 <div class="ravitArticle">
             <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
                 <span class="paintPink">졸업요건:</span> 졸업을 위하여
             </h2>
-            아니 그 한 과목을 안 들어서 한 학기를 더 다녀야 된다구요...?;;
+            아니 그 한 과목을 안 들어서 한 학기를 더 다녀야 된다구요...?
         <hr class="inContents">
         <br />
-
         필수과목 및 졸업요건은 수시로 바뀝니다.
         <br /><br />
         이 글은 그저 참고만 해 주시고,<br />
-        정확한 정보는 <a class="outerLink" href="https://www.kw.ac.kr/ko/life/bachelor_info07.do">&#x1F310;광운대학교 홈페이지 (수료/졸업요건 안내)</a>에서 확인해주세요.
-
-        <h3 class = "subTitleInMain">
-            <div class = "paintPink">1. </div>
-            졸업요건
-        </h3>
+        정확한 정보는 <a class="outerLink" target="_blank" href="https://www.kw.ac.kr/ko/life/bachelor_info07.jsp">&#x1F310;광운대학교 홈페이지 (수료/졸업요건 안내)</a>에서 확인해주세요.
     
         <p class = "content">
             <h4 class = "subTitleInMain">
-                <div class = "paintPink">1.1. </div>
-                수료 기준의 안내
+                1. 수료 기준
             </h4>
-            다음은 2019년 기준, 광운대학교의 학년별 수료에 필요한
-            이수학기 및 취득학점입니다! (17학번부터 적용)
+            다음은 2019년 기준, 광운대학교의 학년별 수료에 필요한 이수학기 및 취득학점입니다!<br />
+			(<strong>17학번부터 적용되는 기준</strong>이며, 16학번까지의 기준은 홈페이지를 참고해주세요)
             <br /><br />
 
             <ul>
@@ -108,172 +101,252 @@
             </ul>
 
             <h4 class = "subTitleInMain">
-                <div class = "paintPink">1.2. </div>
-                    졸업학점 안내
-                </h4>
+				2. 졸업 학점
+            </h4>
                 다음은 광운대학교 졸업요건 홈페이지에서 가져온 졸업이수학점 표입니다.<br />
-                (2019년도 신입학자 기준)
+                (<strong>2020학년도 신입학자</strong> 및 2021학년도 2힉년 편입생, 2022학년도 3학년 편입생부터 적용, 이전 학번은 <a class="outerLink" target="_blank" href="https://www.kw.ac.kr/ko/life/bachelor_info07.jsp">&#x1F310;광운대학교 홈페이지 (수료/졸업요건 안내)</a>를 참고해주세요!)
                 <br /><br />
+		 		<style>
+					.tbl-list {
+						text-align: center;
+						border-collapse: collapse;
+					}
+					.w100 {
+						width: 100%;
+					}
+					th {
+						background-color: #cccccc;
+						padding: 0.25rem;
+						border: 2px solid #AAAAAA;
+					}
+					td {
+						padding: 0.25rem;
+						border: 2px solid #AAAAAA;
+					}
+		 		</style>
                 <table class="tbl-list w100">
-                        <colgroup>
-                            <col style="width:15%">
-                            <col style="width:25%">
-                            <col style="width:10%">
-                            <col style="width:10%">
-                            <col style="width:10%">
-                            <col style="width:10%">
-                            <col style="width:10%">
-                            <col style="width:10%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col" colspan="2">단과대</th>
-                                <th scope="col">교양<br />(필수포함)</th>
-                                <th scope="col">단일전공<br />(필수포함)</th>
-                                <th scope="col">심화전공</th>
-                                <th scope="col">복수전공</th>
-                                <th scope="col">부전공</th>
-                                <th scope="col">졸업이수<br />학점</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="2">전정공대, 공과대, 소프트웨어융합대학</td>
-                                <td rowspan="16">교양이수<br />체계 참조</td>
-                                <td>60</td>
-                                <td>-</td>
-                                <td>54</td>
-                                <td>21</td>
-                                <td>133</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">건축학과(5년제)</td>
-                                <td>120</td>
-                                <td>-</td>
-                                <td>114</td>
-                                <td>-</td>
-                                <td>163</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">자연과학대학</td>
-                                <td>수학과</td>
-                                <td>48</td>
-                                <td>70</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>133</td>
-                            </tr>
-                            <tr>
-                                <td>전자바이오물리학과,<br />화학과, 생활체육학과</td>
-                                <td>60</td>
-                                <td>70</td>
-                                <td>54</td>
-                                <td>21</td>
-                                <td>133</td>
-                            </tr>
-                            <tr>
-                                <td>정보콘텐츠학과(야간)<br />(사이버정보보안학과)</td>
-                                <td>45</td>
-                                <td>60</td>
-                                <td>39</td>
-                                <td>21</td>
-                                <td>120</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="5">인문사회<br />과학대학</td>
-                                <td>국어국문학과</td>
-                                <td>51</td>
-                                <td>70</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>영어영문학과</td>
-                                <td>45</td>
-                                <td>70</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>산업심리학과</td>
-                                <td>51</td>
-                                <td>66</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>미디어영상학부</td>
-                                <td>45</td>
-                                <td>70</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>동북아문화산업학부</td>
-                                <td>66</td>
-                                <td>-</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="4">정책법학대학</td>
-                                <td>행정학과</td>
-                                <td>45</td>
-                                <td>60</td>
-                                <td>45</td>
-                                <td>30</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>법학부</td>
-                                <td>45</td>
-                                <td>60</td>
-                                <td>36</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>자산관리학과(야간)<br />(부동산법무학과)</td>
-                                <td>45</td>
-                                <td>60</td>
-                                <td>39</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>국제학부</td>
-                                <td>45</td>
-                                <td>60</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">경영대학</td>
-                                <td>경영학부</td>
-                                <td>45</td>
-                                <td>70</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>국제통상학부</td>
-                                <td>57</td>
-                                <td>-</td>
-                                <td>45</td>
-                                <td>21</td>
-                                <td>130</td>
-                            </tr>
-                        </tbody>
-                    </table>
+					<colgroup>
+					<col style="width:15%">
+					<col style="width:15%">
+					<col style="width:10%">
+					<col style="width:10%">
+					<col style="width:10%">
+					<col style="width:10%">
+					<col style="width:10%">
+					<col style="width:10%">
+					<col style="width:10%">
+					</colgroup>
+					<thead>
+					<tr>
+					<th scope="col" colspan="2" rowspan="2">단과대</th>
+					<th scope="col" rowspan="2">교양<br>(필수포함)</th>
+					<th scope="col" colspan="2">주전공 학점</th>
+					<th scope="col" rowspan="2">심화전공<br>(필수포함)</th>
+					<th scope="col" rowspan="2">복수전공</th>
+					<th scope="col" rowspan="2">부전공</th>
+					<th scope="col" rowspan="2">졸업이수학점</th>
+					</tr>
+					<tr>
+					<th scope="col">단일전공 이수시<br>(필수포함)</th>
+					<th scope="col">다전공 이수시<br>(필수포함)<br>*부전공제외</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+					<td colspan="2">전자정보공과대학</td>
+					<td rowspan="20">교양이수<br>체계 참조</td>
+					<td>60</td>
+					<td>54</td>
+					<td>-</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td rowspan="3">소프트웨어융합대학</td>
+					<td>컴퓨터정보공학부</td>
+					<td>60</td>
+					<td>54</td>
+					<td>-</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td>소프트웨어학부</td>
+					<td>60</td>
+					<td>54</td>
+					<td>-</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td>정보융합학부</td>
+					<td>60</td>
+					<td>54</td>
+					<td>-</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td rowspan="2">공과대학</td>
+					<td>건축공,화공,환경</td>
+					<td>60</td>
+					<td>54</td>
+					<td>-</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td>건축학과(5년제)</td>
+					<td>120</td>
+					<td>120</td>
+					<td>-</td>
+					<td>99</td>
+					<td>45</td>
+					<td>163</td>
+					</tr>
+					<tr>
+					<td rowspan="3">자연과학대학</td>
+					<td>수학과</td>
+					<td>48</td>
+					<td>45</td>
+					<td>70</td>
+					<td>45</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td>전자바이오물리학과,화학과,스포츠융합과학과</td>
+					<td>60</td>
+					<td>54</td>
+					<td>70</td>
+					<td>54</td>
+					<td>21</td>
+					<td>133</td>
+					</tr>
+					<tr>
+					<td>정보콘텐츠학과<br>(야간)</td>
+					<td>45</td>
+					<td>39</td>
+					<td>60</td>
+					<td>39</td>
+					<td>21</td>
+					<td>120</td>
+					</tr>
+					<tr>
+					<td rowspan="5">인문사회<br>과학대학</td>
+					<td>국어국문학과</td>
+					<td>51</td>
+					<td>45</td>
+					<td>70</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>영어영문학과</td>
+					<td>45</td>
+					<td>45</td>
+					<td>70</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>산업심리학과</td>
+					<td>51</td>
+					<td>45</td>
+					<td>66</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>미디어영상학부</td>
+					<td>45</td>
+					<td>45</td>
+					<td>70</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>동북아문화산업학부</td>
+					<td>66</td>
+					<td>45</td>
+					<td>-</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td rowspan="4">정책법학대학</td>
+					<td>행정학과</td>
+					<td>45</td>
+					<td>45</td>
+					<td>60</td>
+					<td>45</td>
+					<td>30</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>법학부</td>
+					<td>45</td>
+					<td>36</td>
+					<td>60</td>
+					<td>36</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>자산관리학과<br>(야간)</td>
+					<td>45</td>
+					<td>39</td>
+					<td>60</td>
+					<td>39</td>
+					<td>21</td>
+					<td>120</td>
+					</tr>
+					<tr>
+					<td>국제학부*</td>
+					<td>45</td>
+					<td>45</td>
+					<td>60</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td rowspan="2">경영대학</td>
+					<td>경영학부</td>
+					<td>54</td>
+					<td>45</td>
+					<td>70</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					<tr>
+					<td>국제통상학부</td>
+					<td>57</td>
+					<td>45</td>
+					<td>-</td>
+					<td>45</td>
+					<td>21</td>
+					<td>130</td>
+					</tr>
+					</tbody>
+					</table>
                 <br />
-                요게 끝이 아닙니다. 교양교과목 이수체계가 있거든요!
+		 * 입학전형 만학도 전형, 외국인전형, 특성화고를 졸업한 재직자전형, 체육특기자, 편입생은 교양이수체계 적용을 면제하여, 교양필수 이수를 면제하고, 교양학점 30학점을 이수하도록 함. <br />
+		 * 복수전공의 경우, 학과(부)에 따라 필수 교과목이 있을 수 있음.<br />
+		 <br /><br />
+                
+		 요게 끝이 아닙니다. 교양교과목 이수체계가 있거든요!
                 <br /><br />
                 <table class="tbl-list w100">
                         <colgroup>
@@ -287,10 +360,9 @@
                         <thead>
                             <tr>
                                 <th scope="col" colspan="2">구분</th>
-                                <th scope="col">인문<br />(국문,영산,미디어,<br />산심,문산,법,국제,행정)</th>
-                                <th scope="col">인문<br />(경영,통상학부)</th>
-                                <th scope="col">자연<br />(자연과학대학 전체학과)</th>
-                                <th scope="col">공학<br />(전정공대,공과대,<br />소융대 전체학과)</th>
+                                <th scope="col">인문<br />(인사대,정법대,경영대)</th>
+                                <th scope="col">자연<br />(자연대)</th>
+                                <th scope="col">공학<br />(전정공대,공과대,소융대)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -300,11 +372,9 @@
                                 <td>1학점</td>
                                 <td>1학점</td>
                                 <td>1학점</td>
-                                <td>1학점</td>
                             </tr>
                             <tr>
                                 <td>대학영어</td>
-                                <td>3학점</td>
                                 <td>3학점</td>
                                 <td>3학점</td>
                                 <td>3학점</td>
@@ -314,18 +384,19 @@
                                 <td>6학점</td>
                                 <td>6학점</td>
                                 <td>6학점</td>
-                                <td>6학점</td>
                             </tr>
                             <tr>
-                                <td>언어와표현</td>
+                                <td>융합적사고와 글쓰기<br />(신설)</td>
                                 <td>3학점</td>
-                                <td rowspan="6">6영역중<br />4영역 × 3학점<br />총 12학점<br />의무이수</td>
-                                <td colspan="2" rowspan="6">6영역중<br />4영역 × 3학점<br />총12학점<br />의무이수<br />(자연과학대학 수학과는 6영역중<br />2영역 × 3학점 총6학점 의무이수)
-                            </td></tr>
+                                <td>3학점</td>
+								<td>3학점</td>
+							</tr>
                             <tr>
                                 <td>과학과기술</td>
                                 <td rowspan="5">균형<br />교양</td>
-                                <td rowspan="5">5영역중<br />3영역 × 3학점<br />총 9학점<br />의무이수</td>
+                                <td rowspan="5" colspan="3">5영역 中 3영역 선택, <br />총 9학점 의무이수<br />
+									<comment>//3학점 과목만 영역 이수로 인정되며, 체육·음악·미술실기 과목은 3학점이더라도 균형교양에서 제외됨. <br />예: 예술과체육 1학점짜리 하나, 2학점짜리 하나 들은 것은 예술과체육 영역 이수로 간주되지 않음 <br /></comment>
+								</td>
                             </tr>
                             <tr>
                                 <td>인간과철학</td>
@@ -342,35 +413,45 @@
                             <tr>
                                 <td colspan="2">기초교양</td>
                                 <td>-</td>
-                                <td>-</td>
                                 <td>물리/화학·생물/수학/<br />컴퓨터(25학점 이하)</td>
-                                <td>물리/화학·생물/수학/<br />컴퓨터/공학기초<br />(30학점 이하)</td>
+                                <td>물리/화학·생물/수학/<br />컴퓨터/공학기초<br />(27학점 이하)</td>
                             </tr>
                             <tr>
                                 <td colspan="2">계</td>
                                 <td>22학점</td>
-                                <td>22학점</td>
-                                <td>최대 44학점</td>
-                                <td>최대 49학점</td>
+                                <td>22~38학점<br />(학과별로 상이)</td>
+                                <td>22~49학점<br />(학과별로 상이)</td>
                             </tr>
                         </tbody>
                     </table>
                 <br />
+		 * 균형교양에 서울권역 e-러닝, K-MOOC영역, 외국어로서의한국어영역, 실용영어 계열 강좌는 포함되지 않음<br />
+		 * 3학점 과목만 인정됨(체육실기, 음악실기, 미술실기 과목은 3학점이더라도 균형교양에서 제외)<br />
+		 ⇒ 광운대학교 7대 핵심역량에 부합하도록 필수, 균형, 기초 교양을 구성하고 각 학과의 특성을 고려하여 영역별 과목 선택에서 필수 이수원칙을 정해 균형 잡힌 교육이 되도록 구조화하였음
+		 <br /><br />
                 위의 표 두 개를 꼭 숙지하여, 졸업을 못 하는 일이 없도록 합시다!
         </p>
     </div>
-
-        <!--페이지 푸터 영역-->
-        <hr id="footer">
-        <div include-html = "./commonParts/footer.html" ></div>
-        
-    </div> <!--div class="main"의 끝-->
-
-    <!--JavaScript 호출 영역-->
-    <script>
-        includeHTML();
-    </script>
-    <script src="./scripts/pageSizeAdjust.js"></script>
-</BODY>
-
-</HTML>
+	<!-- 페이지 본문 영역의 끝 -->
+	
+	<br />
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>
+				<strong>Copyright 2022. 악동분홍토끼(@pinkrabbit412). All rights reserved.</strong><br>
+				사이트에 사용된 외부 리소스는 <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit/blob/master/Resources.md">&#x1F310;이 페이지</a>를 참고해주세요.<br />
+                <p style="font-size: 0.85rem;">GitHub URL: <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit">&#x1F310;https://github.com/pinkrabbit412</a> | Team <strong>prograbbit™</strong>'s Project.</p><br />
+			</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="script/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="script/popper.min.js"></script> 
+    <script src="script/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

@@ -4,11 +4,23 @@
 [제작자] 악동분홍토끼(pinkrabbit412@daum.net)
 [설명] 모든 html에 적용될 CSS입니다. 기본 글 서식 및 디자인 등을 정의하고 있습니다.
 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
-html {
-    font-size: 90%;
-    font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
-    line-height: 1.6em;
+@font-face {
+    font-family: 로컬_나눔스퀘어;
+    src: local(※), url(font/NanumSquareR.ttf), format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 로컬_나눔스퀘어;
+    src: local(※), url(font/NanumSquareB.ttf), format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 나눔바른고딕, 나눔스퀘어, NanumSquare, "맑은 고딕","Malgun Gothic", 나눔고딕, "Apple SD Gothic Neo", sans-serif !important; 
 }
 
 .hide {
@@ -19,70 +31,8 @@ html {
     visibility: hidden;
 }
 
-/*헤더 영역*/
-div#siteHeader {
-    vertical-align: middle;
-    margin: 0%;
-    padding: 0%;
-}
-nav {
-    width: 100%;
-    background-color: rgba(251, 171, 210, 0.90);
-}
-nav ul {
-    position: relative;
-    margin: 0%;
-    padding: 0%;
-}
-#mainLogo {
-    margin-right: 3.5%;
-    text-align: left;
-}
-ul#headerList li {
-    display: inline;
-    margin-left: 10px;
-    font-weight: bold;
-    color: white;
-    padding: 19px;
-    padding-right: 1.5%;
-    padding-left: 1.5%;
-    font-size: 1rem;
-    vertical-align: middle;
-}
-ul#headerList li a {
-    color: white;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
-div.headerText {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-ul#headerList li.menuBox:hover{
-    background-color:#F95AA8;
-}
-/*헤더 영역의 끝*/
-
-#main {
-    margin-left: 3%;
-    margin-right: 3%;
-    color: #FFFFFF;
-    width: 94%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body {
-    margin: 0%;
-    background-color: #202325;
-    background-size: 95px;
-}
-
 a {
-    color: #FCACD3;
+    color: #F962AC;
     text-decoration: none;
 }
 a:hover {
@@ -91,55 +41,13 @@ a:hover {
 }
 
 a.outerLink {
-    color: orange;
+    color: #E78112;
     text-decoration: none;
 }
 a.outerLink:hover {
-    color: orange;
+    color: #E78112;
     text-decoration: underline;
 }
-
-div#mainContents {
-    background-color: #252830;
-    padding-top: 0.75rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 1.6rem;
-    color: white;
-}
-
-
-/*소제목 및 문단 부분의 시작*/
-h2.TitleInMain {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-h3.subTitleInMain {
-    font-size: 1.75rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid silver;
-}
-
-h4.subTitleInMain {
-    font-size: 1.5rem;
-    padding-bottom: 5px;
-    border-bottom: 1px solid silver;
-}
-
-h5.subTitleInMain {
-    font-size: 1.25rem;
-    padding-bottom: 5px;
-    border-bottom: 1px solid silver;
-}
-
-hr.inContents {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 1px dashed #FCACD3;
-}
-/*소제목 및 문단 부분의 끝*/
-
 
 hr#footer {
     margin-top: 0%;
@@ -158,26 +66,57 @@ hr#footer {
     border: 1px solid #FCACD3;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 1rem;
+	text-align: center;
 }
 
 
-/*텍스트 서식 모음의 시작*/
-.paintPink{
+/* 텍스트 서식 모음의 시작 */
+.paintDarkPink{
     color: #FCACD3;
     display: inline;
 }
-
+.paintDarkPink{
+    color: #F962AC;
+    display: inline;
+}
 .clr{
     color: #FCACD3; /*Default Value*/
     display: inline;
-
 }
 
-.comment {
+comment {
     color: olivedrab;
 }
 
 del {
     color: gray;
 }
-/*텍스트 서식 모음의 끝*/
+/* 텍스트 서식 모음의 끝 */
+
+
+/* 본문 영역 지정의 시작 */
+.ravitArticle {
+	text-align: left;
+	padding: 2rem;
+	margin: 0px auto;
+	max-width: 85rem;
+	background-color: white;
+	margin-bottom: 0px;
+}
+/* 본문 영역 지정의 끝 */
+
+
+/* 헤더 영역 서식의 시작 */
+li.nav-item {
+	margin-right: 1rem;
+}
+/* 헤더 영역 서식의  */
+
+/* 푸터 영역 서식의 시작 */
+footer {
+	margin-top: 0px;
+	padding-top: 1rem;
+	color: aliceblue;
+	background-color: #212529;
+}
+/* 푸터 영역 서식의 끝 */

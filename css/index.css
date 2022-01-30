@@ -1,61 +1,16 @@
 /*
 [파일 이름] index.css
-[제작 일자] 2019년 03월 30일
+[제작 일자] 2022년 01월 17일
 [제작자] 악동분홍토끼(pinkrabbit412@daum.net)
 [설명] index.html에 적용될 CSS입니다.
 */
 
-table#mainPageArticleTable {
-    width: 100%;
-    text-align: center;
-    border: 3px solid #FCACD3
+
+/* 메인화면 메세지박스 부분 CSS값의 시작 */
+.mainMessage{
+	background-image: url("../image/schoolImage/univFront_dark.png");
+	background-size: cover;
+	color: aliceblue;
+	border-radius: 0rem;
 }
-
-td.ATHead {
-    background-color:#FCACD3;
-    width: 10vw;
-    max-width: 80px;
-    padding: 0.5rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-td.ATHead>img {
-    width: 100%;
-    max-width: 60px;
-}
-
-td.AT {
-    padding-left: 20px;
-    text-align: left;
-}
-
-
-
-table#RAVITtogetherWith {
-    width: 100%;
-    text-align: center;
-    border: 3px solid #FCACD3
-}
-
-td.tWHead {
-    background-color: #FCACD3;
-    width: 8vw;
-    max-width: 60px;
-    padding: 1vw;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #252830;
-}
-
-td.tW {
-    padding: 1rem;
-    text-align: center;
-}
-
-div.tWHeadText {
-    display: inline-block;
-    vertical-align: middle;
-}
+/* 메인화면 메세지박스 부분 CSS값의 끝 */

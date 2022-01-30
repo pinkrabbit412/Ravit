@@ -1,37 +1,65 @@
-<!DOCTYPE HTML>
-<HTML lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
+	
+	<!--헤드 태그-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>래빛: 여러분들을 위한 자그마한 안내서</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/basics.css" rel="stylesheet">
 
-<HEAD>
-    <!--웹 페이지 기본 정보 설정-->
-    <title>래빛: FAQ</title>
+		<meta property="og:title" content="래빛" />
+		<meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+		<meta property="og:image" content="./image/rabbitMainImage.png" />
+		<meta property="og:url" content="ravit.ml" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
 
-    <meta charset="UTF-8">
-    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
-    <meta name="author" content="악동분홍토끼">
+		<!--스타일시트 등의 정보 설정-->
+		<link rel="shortcut icon" href="./image/favicon.ico">
+		<link rel="stylesheet" href="./css/basics.css">
+		<link rel="stylesheet" href="./css/faq.css">
 
-    <meta property="og:title" content="래빛" />
-    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
-    <meta property="og:image" content="./image/rabbitMainImage.png" />
-    <meta property="og:url" content="ravit.ml" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+		<!--자바스크립트/JQuery 영역-->
+		<script src="./script/mapImageSelect.js"></script>
+	</head>
 
-    <!--스타일시트 등의 정보 설정-->
-    <link rel="shortcut icon" href="./image/favicon.ico">
-
-    <link rel="stylesheet" href="./css/basics.css">
-    <link rel="stylesheet" href="./css/faq.css">
-
-    <!--자바스크립트/JQuery 영역-->
-    <script src="./scripts/includeHTML.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <!--페이지 헤더 영역-->
-    <div include-html = "./commonParts/header.html" ></div>
-
-<BODY>
-    <div id="main">
-        <!--페이지 본문-->
+<body>
+		<!-- (공통) 네비게이션 바 -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="./index.html" style="margin-left: 2rem; margin-right: 2rem"><img src="image/ravit_logo_white.png" alt="래빛 로고" height="45rem"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> <a class="nav-link" href="./index.html">메인<span class="sr-only">(current)</span></a> </li>
+						<li class="nav-item"> <a class="nav-link" href="./campusMap.html">캠퍼스맵</a> </li>
+						<li class="nav-item active"> <a class="nav-link" href="./faq.html">FAQ</a> </li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 게시글 </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="./article_simpleTips.html">간단한 팁</a>
+								<a class="dropdown-item" href="./article_signingUp.html">수강신청</a>
+								<a class="dropdown-item" href="./article_grades.html">학점</a> 
+								<a class="dropdown-item" href="./article_toGraduate.html">졸업요건</a> 
+								<a class="dropdown-item" href="./article_scholarship.html">장학금</a> 
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="./websites.html">외부 웹사이트</a> 
+							</div>
+						</li>
+						<!--<li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li> -->
+					</ul>
+        			<!--<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>-->
+      			</div>
+			</nav>
+	
+		<!--페이지 본문-->
+		<div class="ravitArticle">
         <div id="mainContents">
             <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
                 <span class="paintPink">F</span>requently <span class="paintPink">A</span>sked <span class="paintPink">Q</span>uestions
@@ -40,16 +68,18 @@
             <hr class="inContents">
             <br />
 
-            <div class="infoBubble">
-                Ctrl + F로 내용 검색이 가능합니다!<br />
-                모바일은 '페이지 내에서 찾기'등을 이용해주세요.
+            <div class="infoBubble" style="max-width: 35rem; margin: 0px auto;">
+                <b>Ctrl + F</b>로 내용 검색이 가능합니다!<br />
+                모바일은 '페이지 내에서 찾기'등을 이용해주세요.<br /><br />
+				이외 궁금한 내용은 제 <a class="outerLink" target="_blank" href="https://open.kakao.com/me/pinkrabbit412">&#x1F310;오픈카톡</a>으로 물어보시면<br />
+				아는 한에서 최대한 답해드릴게요.
             </div>
 
             <br /><br />
             
             <div id="messages">
                 <div class="message">
-                    <div style="text-align: right;">질문 #1 <div class="ques">
+                    <div id="1" style="text-align: right;">질문 #1 <div class="ques">
                         광운대학교는 몇년도에 개교했나요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
@@ -57,125 +87,144 @@
                         1963년 동국전자공과대학, 1964년 광운전자공과대학을 거쳐<br />
                         1987년에 지금의 광운대학교가 되었어요.
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #2 <div class="ques">
+                    <div id="2" style="text-align: right;">질문 #2 <div class="ques">
                         출석 확인은 어디에서 하나요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
-                        다음 URL로 접속해보세요: <a href="https://info.kw.ac.kr/webnote/attend/login.php">https://info.kw.ac.kr/webnote/attend/login.php</a>
+                        광운대학교 KLAS → 메뉴(≡) → 대학생활 → 수강관리 → 출석관리(KW출첵)에 들어가 조회할 수 있어요. 
+						다음 URL로 접속해보세요: <a class="outerLink" target="_blank" href="https://klas.kw.ac.kr/std/ads/admst/KwAttendStdPage.do">&#x1F310;https://klas.kw.ac.kr/std/ads/admst/KwAttendStdPage.do</a>
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #3 <div class="ques">
-                        U-Campus(유캠퍼스, 유캠)이 뭐에요?
+                    <div id="3" style="text-align: right;">질문 #3 <div class="ques">
+                        클라스(KLAS)가 뭐에요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
-                        학교마다 하나씩은 있는, 종합정보서비스를 제공하는 웹사이트입니다!
+                        학교마다 하나씩은 있는, 종합정보서비스를 제공하는 웹사이트입니다!<br>
+						옛날 서비스명은 U-Campus(유캠퍼스, 유캠)였어요. 이후 이 사이트로 개편되었답니다.
                         <br />과목별 공지사항 확인 및 과제 제출, 수강신청 프로그램 다운로드, 성적 확인, 수업 평가 등을 하는 곳이라서 매우 자주 접속하시게 될 거에요.
-                        다음 URL로 접속해보세요: <a href="https://info.kw.ac.kr">https://info.kw.ac.kr</a>
+                        다음 URL로 접속해보세요: <a class="outerLink" target="_blank" href="https://klas.kw.ac.kr/">&#x1F310;https://klas.kw.ac.kr/</a>
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #4 <div class="ques">
+                    <div id="4" style="text-align: right;">질문 #4 <div class="ques">
                         학점이 뭐에요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
                         다음을 참고해주세요: <a href="./article_grades.html">학점</a>
                     </div></div>
+					<hr>
                 </div>
-
+				
                 <div class="message">
-                    <div style="text-align: right;">질문 #5 <div class="ques">
+                    <div id="5" style="text-align: right;">질문 #5 <div class="ques">
                         전필, 전선, 기필, 기선, 교필, 교선이<br />무엇의 줄임말인가요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
                         각각 전공필수, 전공선택, 기초교양필수, 기초교양선택, 교양필수, 교양선택의 약자입니다!
                         기초교양 및 필수 과목은 정해진 기준에 따라 이수하지 않으시면 졸업이 불가능하니 이 점 유의하세요...!
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
-
+				
                 <div class="message">
-                    <div style="text-align: right;">질문 #6 <div class="ques">
+                    <div id="6" style="text-align: right;">질문 #6 <div class="ques">
                         학생회비는 꼭 납부해야 하나요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
                         학생회비는 학생회라는 단체에 도움을 주려 학생들이 <strong>자발적으로</strong> 후원하는 일종의 후원금입니다.
                         다시 말해, <strong>학생회비 납부는 자유</strong>입니다! 누구도 학생회비를 내라고 강요하지 못해요.
-                        다만 학생회 활동을 하신다면 눈치가 보이게 마련이므로 내시는 게 편하실 수도 있어요.
+                        다만 학생회의 다양한 활동을 바란다면 납부하셔도 좋답니다.
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #7 <div class="ques">
+                    <div id="7" style="text-align: right;">질문 #7 <div class="ques">
                         수강신청을 잘못 했는데, 해결법이 있나요?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
                         크게 두 가지 방법이 있어요. <b>'수강정정'</b>과 <b>'수강포기'</b>에요.<br />
-                        ①수강정정: 아직 수강신청 변경 기간이 지나지 않았을 때 사용할 수 있는 방법이에요.
+                        <u>① 수강정정:</u> 아직 수강신청 변경 기간이 지나지 않았을 때 사용할 수 있는 방법이에요.
                         지도교수님의 전자승인을 받은 후(보통 일괄적으로 수강정정 며칠 전에 해 주시지만,
-                        공대의 경우, 따로 '수학계획서'라는 것을 작성하여 제출하고 승인을 받아야만 해요.)
+                        소융대 및 공대의 경우, 따로 '수학계획서'라는 것을 작성하여 제출하고 승인을 받아야만 해요.)
                         수강정정 당일에 수강신청 프로그램에 접속하여 삭제 또는 신청하시면 된답니다.
                         <br />
-                        ②수강포기: 수강신청 변경 기간이 지났다면 수강포기 제도를 사용하실 수 있어요.
+                        <u>② 수강포기:</u> 수강신청 변경 기간이 지났다면 수강포기 제도를 사용하실 수 있어요.
                         정말 이건 아니다 싶은 수업을 신청하지 않았던 것처럼 처리할 수 있지요.
                         단, 수강포기 기간(대략 학기의 1/4가 지나기 전 까지)을 놓치면,
                         그 이후로는 재수강밖에 기회가 없으니 각별히 주의하세요...!
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #8 <div class="ques">
-                        시간표를 짜긴 짰는데,
-                        <br />이게 잘 짠건지 아닌지 궁금해요.
+                    <div id="8" style="text-align: right;">질문 #8 <div class="ques">
+                        시간표를 짜긴 짰는데,<br />
+                        이게 잘 짠건지 아닌지 궁금해요.
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
-                        주변에 아는 선배님이 계시다면, 커피 한 잔 사드리거나 기프티콘을 선물해드리면서,
-                        시간표 이미지 파일을 보내 여쭤보세요.<br />
-                        여쭤볼 선배님이 딱히 없다면, 제게 여쭤보셔도 괜찮답니다!
-                        오픈카톡 <a href="https://open.kakao.com/me/pinkrabbit412">https://open.kakao.com/me/pinkrabbit412</a>를 이용해주세요. :)
+                        주변에 아는 선배님이 계시다면, 커피 한 잔 사드리거나 기프티콘을 선물해드리면서
+                        시간표 이미지 파일을 보내 여쭤보세요. 여쭤볼 선배님이 딱히 없다면, 제게 여쭤보셔도 괜찮답니다!<br />
+                        제 <a class="outerLink" target="_blank" href="https://open.kakao.com/me/pinkrabbit412">&#x1F310;오픈카톡</a>을 이용하시면 됩니다 :)<br />
+						<comment>※ 저한테 물어보실 때는 선물 들고 오지 마세요 ^^;</comment>
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #9 <div class="ques">
+                    <div id="9" style="text-align: right;">질문 #9 <div class="ques">
                         학교 기숙사 모집요강을 보고 싶어요.
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
-                            <a class = "outerLink" target="_blank" href="https://www.kw.ac.kr/ko/life/notice.do?srCategoryId1=&mode=list&srSearchKey=article_title&srSearchVal=%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD&x=0&y=0">&#x1F310;광운대학교 공공기숙사 홈페이지</a>에서
-                            커뮤니티 > 공지사항 으로 가시면 확인하실 수 있어요.<br />
+                            <a class="outerLink" target="_blank" href="https://www.kw.ac.kr/ko/life/notice.do?srCategoryId1=&mode=list&srSearchKey=article_title&srSearchVal=%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD&x=0&y=0">&#x1F310;광운대학교 공공기숙사 홈페이지</a>에서
+                            커뮤니티 → 공지사항 으로 가시면 확인하실 수 있어요.<br />
                             건강진단서를 보건소에서 발급받으면 약 1~2주정도 걸리므로, <strong>미리 발급</strong>받으시는 것을 강력히 권장합니다...!
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
 
                 <div class="message">
-                    <div style="text-align: right;">질문 #10 <div class="ques">
-                        삼능이 무슨 건물이에요...?
+                    <div id="10" style="text-align: right;">질문 #10 <div class="ques">
+                        '삼능'이 무슨 건물이에요...?
                     </div></div>
                     <div style="text-align: left;"><div class="ans">
                         삼능스페이스향(삼능스페이스아파트)의 약칭으로,
                         광운대역 앞에 위치하고 있는 오피스텔 건물이며,
-                        광운대학교 미디어콘텐츠센터가 여기 위치하고 있답니다.
+                        <b>광운대학교 미디어콘텐츠센터</b>와 광운원격평생교육원 등이 여기 위치하고 있답니다.
+						자세한 위치를 <a class="outerLink" target="_blank" href="http://kko.to/6W30RK2fH">&#x1F310;카카오맵</a>으로 첨부합니다, 참고해주세요.
                     </div></div>
+					<hr class="bubbleSeperate">
                 </div>
             </div>
-            <br />
         </div>
-
-        <!--페이지 푸터 영역-->
-        <hr id="footer">
-        <div include-html = "./commonParts/footer.html" ></div>
-        
-    </div> <!--div class="main"의 끝-->
-
-    <!--JavaScript 호출 영역-->
-    <script>
-        includeHTML();
-    </script>
-    <script src="./scripts/pageSizeAdjust.js"></script>
-</BODY>
-
-</HTML>
+	</div>
+	<br />
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>
+				<strong>Copyright 2022. 악동분홍토끼(@pinkrabbit412). All rights reserved.</strong><br>
+				사이트에 사용된 외부 리소스는 <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit/blob/master/Resources.md">&#x1F310;이 페이지</a>를 참고해주세요.<br />
+                <p style="font-size: 0.85rem;">GitHub URL: <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit">&#x1F310;https://github.com/pinkrabbit412</a> | Team <strong>prograbbit™</strong>'s Project.</p><br />
+			</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="script/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="script/popper.min.js"></script> 
+    <script src="script/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

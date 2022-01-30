@@ -1,48 +1,73 @@
-<!DOCTYPE HTML>
-<HTML lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
+	
+	<!--헤드 태그-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>래빛: 여러분들을 위한 자그마한 안내서</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/basics.css" rel="stylesheet">
 
-<HEAD>
-    <!--웹 페이지 기본 정보 설정-->
-    <title>래빛: 간단한 팁들</title>
+		<meta property="og:title" content="래빛" />
+		<meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+		<meta property="og:image" content="./image/rabbitMainImage.png" />
+		<meta property="og:url" content="ravit.ml" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
 
-    <meta charset="UTF-8">
-    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
-    <meta name="author" content="악동분홍토끼">
+		<!--스타일시트 등의 정보 설정-->
+		<link rel="shortcut icon" href="./image/favicon.ico">
+		<link rel="stylesheet" href="./css/basics.css">
+		<link rel="stylesheet" href="./css/forArticle.css">
 
-    <meta property="og:title" content="래빛" />
-    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
-    <meta property="og:image" content="../image/rabbitMainImage.png" />
-    <meta property="og:url" content="ravit.ml" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+		<!--자바스크립트/JQuery 영역-->
+		<script src="./script/mapImageSelect.js"></script>
+	</head>
 
-    <!--스타일시트 등의 정보 설정-->
-    <link rel="shortcut icon" href="./image/favicon.ico">
-
-    <link rel="stylesheet" href="./css/basics.css">
-    <link rel="stylesheet" href="./css/forArticle.css">
-
-    <!--자바스크립트/JQuery 영역 (아직 내용 없음)-->
-    <script src="./scripts/includeHTML.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <!--페이지 헤더 영역-->
-    <div include-html = "./commonParts/header.html" ></div>
-
-<BODY>
-    <div id="main">
-        <!--페이지 본문-->
-        <div id="mainContents">
+<body>
+		<!-- (공통) 네비게이션 바 -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="./index.html" style="margin-left: 2rem; margin-right: 2rem"><img src="image/ravit_logo_white.png" alt="래빛 로고" height="45rem"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> <a class="nav-link" href="./index.html">메인<span class="sr-only">(current)</span></a> </li>
+						<li class="nav-item"> <a class="nav-link" href="./campusMap.html">캠퍼스맵</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a> </li>
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 게시글 </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="./article_simpleTips.html">간단한 팁</a>
+								<a class="dropdown-item" href="./article_signingUp.html">수강신청</a>
+								<a class="dropdown-item" href="./article_grades.html">학점</a> 
+								<a class="dropdown-item" href="./article_toGraduate.html">졸업요건</a> 
+								<a class="dropdown-item" href="./article_scholarship.html">장학금</a> 
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="./websites.html">외부 웹사이트</a> 
+							</div>
+						</li>
+						<!--<li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li> -->
+					</ul>
+        			<!--<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>-->
+      			</div>
+			</nav>
+	
+		<!-- 페이지 본문 영역의 시작 -->
+        <div class="ravitArticle">
             <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
                 <span class="paintPink">간단한 팁들</span>
             </h2>
             대학으로의 첫걸음, 여러분들께 드리고 싶은 약간의 힌트랄까요?
         <hr class="inContents">
-        <br />
-        <h3 class = "subTitleInMain">
-            <div class = "paintPink">0. </div>
-            인삿말
-        </h3>
+        <h4 id="0" class = "subTitleInMain">
+            0. 들어가며
+        </h4>
 
         <p class = "content">
             안녕하세요! 악동분홍토끼 인사드려요.<br />
@@ -52,10 +77,9 @@
             이 문서가 조금이나마 도움이 되어드렸으면 좋겠습니다 :3
         </p>
 
-        <h3 class = "subTitleInMain">
-            <div class = "paintPink">1. </div>
-            입학 전
-        </h3>
+        <h4 id="1" class = "subTitleInMain">
+            1. 입학 전
+        </h4>
     
         <p class = "content">
             <ul class="tipList">
@@ -94,13 +118,14 @@
                         자신의 주량을 정확히 알아두는 것은 매우 중요합니다.
                         부모님과 함께 마시는 등의 안전한 상황을 이용해
                         본인의 주량에 대한 탐구를 해 보시는 것을 추천드립니다!
+						저도 궁금해서 얼마까지 괜찮나 소주 기준으로 테스트해봤는데, 제 경우엔 2병까지가 적정선인 것 같더라구요.
                     </p>
                 </li>
 
                 <li>
                     <div class="keySentence"><a href = "./article_signingUp.html">수강신청 하는 법</a> 잘 알아두기</div>
                     <p class="tipsExplanation">
-                        수강신청을 처음 하신다구요? <del>그런 당신을 위해 준비했습니다!</del>
+                        수강신청을 처음 하신다구요? <del>???: 그런 당신을 위해 준비했습니다!</del>
                         수강신청 가이드를 위 링크에서 확인해보세요!
                     </p>
                 </li>
@@ -109,10 +134,9 @@
         </p>
 
 
-        <h3 class = "subTitleInMain">
-            <div class = "paintPink">2. </div>
-            입학 후
-        </h3>
+        <h4 id="2" class = "subTitleInMain">
+            2. 입학 후
+        </h4>
     
         <p class = "content">
             <ul class="tipList">
@@ -123,7 +147,7 @@
                         개인에게 일일이 친절하게 알려주지는 않아요.
                         <br />
                         아 맞다, 새내기라 장학금을 처음 신청하신다구요?
-                        또다시 그런 당신을 위해 준비했습니다!
+                        <del>???: 그런 당신을 위해 또 다시 준비했습니다!</del>
                         다음 링크를 확인해주세요: <a href="./article_scholarship.html">장학금</a>
                     </p>
                 </li>
@@ -167,10 +191,10 @@
                         가끔 보면 화장실 칸막이 안쪽에 상담을 권유하는 작은 포스터가 붙어있거나,
                         지하철역(광운대역도 예외 아닙니다) 앞에서 잠시만 시간을 내어달라고 하는 사람들이 있습니다.
                         <br />
-                        <span class="clr" style="color: lightcoral">절대 관심 갖지 마세요.</span>
+                        <span class="clr" style="color: red">절대 관심 갖지 마세요.</span>
                         신천지 등의 사이비 단체로, 엮일 시 인생이 피곤해질 수 있습니다. 
                         진짜 상담이 필요하시다면 교내 단체를 이용하시거나,
-                        <a href = "mailto: pinkrabbit412@daum.net">제 이메일(pinkrabbit412@daum.net)</a>을 이용해주세요.
+                        <a href = "mailto: pinkrabbit412@daum.net">제 이메일</a> 또는 <a class="outerLink" target="_blank" href="https://open.kakao.com/me/pinkrabbit412">&#x1F310;오픈카톡</a>을 이용해주세요.
                     </p>
                 </li>
 
@@ -180,25 +204,33 @@
                         20대 청춘 남성을 강제 징집하는 주제에 자기가 가고 싶은 입대일도 제대로 선택하지 못하게끔 해 놓았습니다.
                         병무청 홈페이지를 주기적으로 꾸준히 확인해, 바람직한 입대 시기를 놓치는 일이 없게끔 주의하세요.
                         <br />
-                        보통 1학년 2학기 또는 2학년 2학기를 마친 후 입대하며, 2학년 1학기만 마치고 입대하시는 분도 심심찮게 보입니다.
+                        보통 1학년 1학기 수료 또는 2학기 수료 후 입대하며, 2학년 1학기까지 마치고 입대하시는 분도 심심찮게 보입니다.<br>
+						<del>저는 입대 시기 신청기간을 깜빡해서(...) 2학년 2학기까지 수료하고 갔다왔는데, 선임들이 나와 동갑이거나 어릴때 참 골때리던...</del>
                     </p>
                 </li>
             </ul>
         </p>
 
-    </div>
-
-        <!--페이지 푸터 영역-->
-        <hr id="footer">
-        <div include-html = "./commonParts/footer.html" ></div>
-        
-    </div> <!--div class="main"의 끝-->
-
-    <!--JavaScript 호출 영역-->
-    <script>
-        includeHTML();
-    </script>
-    <script src="./scripts/pageSizeAdjust.js"></script>
-</BODY>
-
-</HTML>
+    </div>		<!-- 페이지 본문 영역의 끝 -->
+	
+	<br />
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>
+				<strong>Copyright 2022. 악동분홍토끼(@pinkrabbit412). All rights reserved.</strong><br>
+				사이트에 사용된 외부 리소스는 <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit/blob/master/Resources.md">&#x1F310;이 페이지</a>를 참고해주세요.<br />
+                <p style="font-size: 0.85rem;">GitHub URL: <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit">&#x1F310;https://github.com/pinkrabbit412</a> | Team <strong>prograbbit™</strong>'s Project.</p><br />
+			</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="script/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="script/popper.min.js"></script> 
+    <script src="script/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

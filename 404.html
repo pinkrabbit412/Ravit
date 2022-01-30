@@ -3,57 +3,97 @@ permalink: /404.html
 ---
 
 <!DOCTYPE HTML>
-<HTML lang="ko">
+<html lang="ko">
 
-<HEAD>
-    <!--웹 페이지 기본 정보 설정-->
-    <title>래빛: 404 Not Found</title>
+	<!--헤드 태그-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>래빛: 여러분들을 위한 자그마한 안내서</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/basics.css" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="description" content="광운대학교에 입학하신 분들을 도와드리기 위한 페이지입니다!">
-    <meta name="author" content="악동분홍토끼">
+		<meta property="og:title" content="래빛" />
+		<meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
+		<meta property="og:image" content="./image/rabbitMainImage.png" />
+		<meta property="og:url" content="ravit.ml" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
 
-    <meta property="og:title" content="래빛" />
-    <meta property="og:description" content="광운대학교에 입학하신 분들을 도와드리기 위한 안내서격 페이지입니다!" />
-    <meta property="og:image" content="./image/rabbitMainImage.png" />
-    <meta property="og:url" content="ravit.ml" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+		<!--스타일시트 등의 정보 설정-->
+		<link rel="shortcut icon" href="./image/favicon.ico">
+		<link rel="stylesheet" href="./css/basics.css">
+		<link rel="stylesheet" href="./css/forArticle.css">
 
-    <!--스타일시트 등의 정보 설정-->
-    <link rel="shortcut icon" href="./image/favicon.ico">
-    <link rel="stylesheet" href="./css/basics.css">
+		<!--자바스크립트/JQuery 영역-->
+		<script src="./script/mapImageSelect.js"></script>
+	</head>
 
-    <!--자바스크립트/JQuery 영역 (아직 내용 없음)-->
-    <script src="./scripts/includeHTML.js"></script>
-
-    <!--페이지 헤더 영역-->
-    <div include-html="./commonParts/header.html" ></div>
-
-</HEAD>
-
-<BODY>
+<body>
+	<!-- (공통) 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html" style="margin-left: 2rem; margin-right: 2rem"><img src="image/ravit_logo_white.png" alt="래빛 로고" height="45rem"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"> <a class="nav-link" href="./index.html">메인<span class="sr-only">(current)</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="./campusMap.html">캠퍼스맵</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a> </li>
+                  <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 게시글 </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./article_simpleTips.html">간단한 팁</a>
+                          <a class="dropdown-item" href="./article_signingUp.html">수강신청</a>
+                          <a class="dropdown-item" href="./article_grades.html">학점</a> 
+                          <a class="dropdown-item" href="./article_toGraduate.html">졸업요건</a> 
+                          <a class="dropdown-item" href="./article_scholarship.html">장학금</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="./websites.html">외부 웹사이트</a> 
+                      </div>
+                  </li>
+                  <!--<li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li> -->
+              </ul>
+              <!--<form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>-->
+        	</div>
+        </nav>
+	
     <div id="main">
         <!--페이지 본문-->
-        <div id="mainContents">
+        <div class="ravitArticle">
             <h2 class="TitleInMain" style="position: relative; vertical-align: middle;">
-                <span class="paintPink">Error:</span> 404 Not Found
+                HTTP 404 Not Found
             </h2>
             오류: 페이지를 찾을 수 없어요.
             <hr class="inContents">
-            <img src = "./image/404.png" width="100%">
+            <img src = "./image/404.png" width="100%" alt="HTTP 404 Not Found">
         </div>
-
-        <!--페이지 푸터 영역-->
-        <hr id="footer">
-        <div include-html = "./commonParts/footer.html" ></div>
-        
-    </div> <!--div class="main"의 끝-->
-
-    <!--JavaScript 호출 영역-->
-    <script>
-        includeHTML();
-    </script>
-</BODY>
-
-</HTML>
+	</div>
+	
+	<br />
+	
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>
+				<strong>Copyright 2022. 악동분홍토끼(@pinkrabbit412). All rights reserved.</strong><br>
+				사이트에 사용된 외부 리소스는 <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit/blob/master/Resources.md">&#x1F310;이 페이지</a>를 참고해주세요.<br />
+                <p style="font-size: 0.85rem;">GitHub URL: <a class = "outerLink" target="_blank" href="https://github.com/pinkrabbit412/Ravit">&#x1F310;https://github.com/pinkrabbit412</a> | Team <strong>prograbbit™</strong>'s Project.</p><br />
+			</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="script/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="script/popper.min.js"></script> 
+    <script src="script/bootstrap-4.4.1.js"></script>
+</body>
+	
+</html>
