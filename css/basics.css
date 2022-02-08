@@ -19,6 +19,97 @@
     font-style: normal;
 }
 
+/*반응형 웹 관련 CSS는 어떤 파일이든 무조건 여기에 넣을 것, 차후 다른 파일로 분리하고 !important 태그 싹 다 지워버릴 예정*/
+@media (max-width: 500px) {
+	.welcomeMessage {
+		font-size: 0.85rem;
+	}
+	.ravitArticle {
+		padding: 1.5rem !important;
+	}
+	
+	/*campusMap.html*/
+	li button {
+		font-size: 0.75rem !important;
+	}
+	ul#mapImageSelector {
+		padding: 0px !important;
+	}
+	
+	/*faq.html*/
+	#messages {
+		max-width: 100% !important;
+		font-size: 0.8rem;
+	}
+	.ques {
+		font-size: 0.8rem !important;
+	}
+	.ans {
+		font-size: 0.8rem !important;
+		padding: 1rem !important;
+		max-width: 100% !important;
+	}
+	#classID {
+		font-size: 1.25rem !important;
+	}
+
+	
+	.tbl-list {
+		font-size: 0.6rem !important;
+	}
+	.tg-pv2v, .tg-3rgv {
+		padding: 0.1rem !important;
+	}
+	table {
+		width: 100%;
+	}
+	td {
+		font-size: 0.8rem !important;
+	}
+	th {
+		font-size: 0.8rem !important;
+	}
+	
+	
+	ol, ul {
+		padding-left: 1rem !important;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+	h4 {
+		font-size: 1.2rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+	}
+	h2 {
+		font-size: 1.4rem;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+	body {
+		font-size: 0.9rem;
+	}
+	
+	/* 페이지 푸터 */
+	footer {
+		font-size: 0.7rem;
+	}
+	footer p {
+		font-size: 0.5rem !important;
+	}
+}
+
+html, body {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	word-break: keep-all;
+}
+
 body {
     font-family: 나눔바른고딕, 나눔스퀘어, NanumSquare, "맑은 고딕","Malgun Gothic", 나눔고딕, "Apple SD Gothic Neo", sans-serif !important; 
 }

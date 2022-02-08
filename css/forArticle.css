@@ -5,20 +5,16 @@
 [설명] article HTML 문서에 적용될 CSS입니다.
 */
 
-p.content {
-    text-align: justify;
-}
-
 ul > li.list {
     margin-bottom: 0.75rem;
 }
 
 h4 {
-	margin-top: 3rem !important;
+	margin-top: 3rem;
 }
 
 h5 {
-	margin-top: 1.5rem !important;
+	margin-top: 1.5rem;
 }
 
 /*simpleTips.html ONLY*/
