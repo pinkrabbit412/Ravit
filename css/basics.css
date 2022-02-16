@@ -164,18 +164,21 @@ hr#footer {
 }
 
 
-/* 텍스트 서식 모음의 시작 */
-.paintDarkPink{
+/* 텍스트 등의 서식 모음의 시작 */
+.paintDarkPink {
     color: #FCACD3;
     display: inline;
-}
-.paintDarkPink{
+} 
+.paintDarkPink {
     color: #F962AC;
     display: inline;
 }
-.clr{
+.clr {
     color: #FCACD3; /*Default Value*/
     display: inline;
+}
+.toCenter {
+	text-align: center;
 }
 
 comment {

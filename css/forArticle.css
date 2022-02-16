@@ -8,6 +8,9 @@
 ul > li.list {
     margin-bottom: 0.75rem;
 }
+ol > li.listInContent {
+    margin-bottom: 0.35rem;
+}
 
 h4 {
 	margin-top: 3rem;
