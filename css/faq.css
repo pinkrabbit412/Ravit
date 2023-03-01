@@ -57,3 +57,26 @@ hr.bubbleSeperate {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+
+/* ==========[ 광운대학교 웹페이지에서 퍼오는 표 관련 CSS의 시작 ]========== */
+.tbl-list {
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 80%;
+}
+.w100 {
+    width: 100%;
+}
+th {
+    background-color: #cccccc;
+    padding: 0.25rem;
+    border: 2px solid #aaaaaa;
+}
+td {
+    padding: 0.25rem;
+    border: 2px solid #aaaaaa;
+}
+.highlight {
+    background-color: rgba(255, 248, 0, 0.15);
+}
+/* ==========[ 광운대학교 웹페이지에서 퍼오는 표 관련 CSS의 끝 ]========== */
