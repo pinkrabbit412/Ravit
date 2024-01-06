@@ -7,16 +7,16 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 @font-face {
-    font-family: 로컬_나눔스퀘어;
-    src: local(※), url(font/NanumSquareR.ttf), format("truetype");
-    font-weight: normal;
-    font-style: normal;
+	font-family: 로컬_나눔스퀘어;
+	src: local(※), url(font/NanumSquareR.ttf), format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-    font-family: 로컬_나눔스퀘어;
-    src: local(※), url(font/NanumSquareB.ttf), format("truetype");
-    font-weight: bold;
-    font-style: normal;
+	font-family: 로컬_나눔스퀘어;
+	src: local(※), url(font/NanumSquareB.ttf), format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
 
 /*반응형 웹 관련 CSS는 어떤 파일이든 무조건 여기에 넣을 것, 차후 다른 파일로 분리하고 !important 태그 싹 다 지워버릴 예정*/
@@ -27,7 +27,7 @@
 	.ravitArticle {
 		padding: 1.5rem !important;
 	}
-	
+
 	/*campusMap.html*/
 	li button {
 		font-size: 0.75rem !important;
@@ -35,7 +35,7 @@
 	ul#mapImageSelector {
 		padding: 0px !important;
 	}
-	
+
 	/*faq.html*/
 	#messages {
 		max-width: 100% !important;
@@ -53,11 +53,11 @@
 		font-size: 1.25rem !important;
 	}
 
-	
 	.tbl-list {
 		font-size: 0.6rem !important;
 	}
-	.tg-pv2v, .tg-3rgv {
+	.tg-pv2v,
+	.tg-3rgv {
 		padding: 0.1rem !important;
 	}
 	table {
@@ -69,12 +69,14 @@
 	th {
 		font-size: 0.8rem !important;
 	}
-	.smallerTable, .smallerTable td, .smallerTable th {
+	.smallerTable,
+	.smallerTable td,
+	.smallerTable th {
 		font-size: 0.65rem !important;
 	}
-	
-	
-	ol, ul {
+
+	ol,
+	ul {
 		padding-left: 1rem !important;
 	}
 	h5 {
@@ -95,7 +97,7 @@
 	body {
 		font-size: 0.9rem;
 	}
-	
+
 	/* 페이지 푸터 */
 	footer {
 		font-size: 0.7rem;
@@ -105,7 +107,8 @@
 	}
 }
 
-html, body {
+html,
+body {
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
@@ -114,82 +117,84 @@ html, body {
 }
 
 body {
-    font-family: 나눔바른고딕, 나눔스퀘어, NanumSquare, "맑은 고딕","Malgun Gothic", 나눔고딕, "Apple SD Gothic Neo", sans-serif !important; 
+	font-family: 나눔바른고딕, 나눔스퀘어, NanumSquare, "맑은 고딕", "Malgun Gothic", 나눔고딕, "Apple SD Gothic Neo", sans-serif !important;
 }
 
 .hide {
-    display: none;
+	display: none;
 }
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 a {
-    color: #F962AC;
-    text-decoration: none;
+	color: #f962ac;
+	text-decoration: none;
 }
 a:hover {
-    color: #FCACD3;
-    text-decoration: underline;
+	color: #fcacd3;
+	text-decoration: underline;
 }
 
 a.outerLink {
-    color: #E78112;
-    text-decoration: none;
+	color: #e78112;
+	text-decoration: none;
 }
 a.outerLink:hover {
-    color: #E78112;
-    text-decoration: underline;
+	color: #e78112;
+	text-decoration: underline;
 }
 
 hr#footer {
-    margin-top: 0%;
+	margin-top: 0%;
 }
 
 .toCenter {
-    text-align: center;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.infoBubble {
-    background-color: rgba(252, 172, 211, 0.1);
-    border: 1px solid #FCACD3;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    padding: 1rem;
 	text-align: center;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.infoBubble {
+	background-color: rgba(252, 172, 211, 0.1);
+	border: 1px solid #fcacd3;
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.table-container {
+	overflow: auto;
+}
 
 /* 텍스트 등의 서식 모음의 시작 */
 .paintDarkPink {
-    color: #FCACD3;
-    display: inline;
-} 
+	color: #fcacd3;
+	display: inline;
+}
 .paintDarkPink {
-    color: #F962AC;
-    display: inline;
+	color: #f962ac;
+	display: inline;
 }
 .clr {
-    color: #FCACD3; /*Default Value*/
-    display: inline;
+	color: #fcacd3; /*Default Value*/
+	display: inline;
 }
 .toCenter {
 	text-align: center;
 }
 
 comment {
-    color: olivedrab;
+	color: olivedrab;
 }
 
 del {
-    color: gray;
+	color: gray;
 }
 /* 텍스트 서식 모음의 끝 */
-
 
 /* 본문 영역 지정의 시작 */
 .ravitArticle {
@@ -201,7 +206,6 @@ del {
 	margin-bottom: 0px;
 }
 /* 본문 영역 지정의 끝 */
-
 
 /* 헤더 영역 서식의 시작 */
 li.nav-item {
